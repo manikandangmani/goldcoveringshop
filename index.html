@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manikandan Gold Covering</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+
+body{
+  background:#0f172a;
+  color:#f8fafc;
+}
+
+header{
+  background:#020617;
+  text-align:center;
+  padding:25px;
+}
+header h1{color:#facc15}
+header p{color:#cbd5f5;font-size:14px}
+
+section{padding:40px 8%}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#020617;
+  border-radius:16px;
+  padding:20px;
+  text-align:center;
+  transition:.3s;
+}
+.card:hover{transform:translateY(-6px)}
+
+.card img{
+  width:100%;
+  border-radius:12px;
+  margin-bottom:12px;
+}
+
+.card h3{color:#facc15}
+.card p{margin:10px 0;color:#cbd5f5}
+
+.btn{
+  display:block;
+  padding:12px;
+  margin-top:10px;
+  border-radius:25px;
+  font-weight:600;
+}
+
+.btn.whatsapp{
+  background:#25D366;
+  color:#020617;
+}
+
+.btn.instagram{
+  border:2px solid #e1306c;
+  color:#e1306c;
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+  color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Manikandan Gold Covering</h1>
+  <p>Order via WhatsApp or Instagram</p>
+</header>
+
+<section>
+  <div class="grid">
+
+    <div class="card">
+      <img src="chain.jpg" alt="Gold Covering Chain">
+      <h3>Gold Covering Chain</h3>
+      <p>Price: ₹1,200</p>
+
+      <a class="btn whatsapp"
+         onclick="buyWhatsApp('Gold Covering Chain','1200')">
+        Buy on WhatsApp
+      </a>
+
+      <a class="btn instagram"
+         href="https://www.instagram.com/direct/t/maniacboy.619/"
+         target="_blank">
+        Buy on Instagram
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  📞 WhatsApp Orders | 📸 Instagram DM Orders  
+  <br>© 2025 Manikandan Gold Covering
+</footer>
+
+<script>
+function buyWhatsApp(product, price){
+  const msg = `Hi, I want to buy ${product}. Price: ₹${price}`;
+  window.open(
+    `https://wa.me/917902873682?text=${encodeURIComponent(msg)}`,
+    "_blank"
+  );
+}
+</script>
+
+</body>
+</html>
