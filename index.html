@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gold Covering Shop</title>
+<title>Manikandan Gold Covering</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -14,6 +14,7 @@
 body{
   background:#0f172a;
   color:#f8fafc;
+  scroll-behavior:smooth;
 }
 
 header{
@@ -24,8 +25,41 @@ header{
 header h1{color:#facc15}
 header p{color:#cbd5f5;font-size:14px}
 
-section{padding:40px 8%}
+/* CATEGORY MENU */
+.categories{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  padding:20px;
+  flex-wrap:wrap;
+  background:#020617;
+}
 
+.categories a{
+  padding:10px 20px;
+  border-radius:20px;
+  border:1px solid #facc15;
+  color:#facc15;
+  font-weight:600;
+  text-decoration:none;
+}
+.categories a:hover{
+  background:#facc15;
+  color:#020617;
+}
+
+/* SECTIONS */
+section{
+  padding:40px 8%;
+}
+
+section h2{
+  color:#facc15;
+  margin-bottom:20px;
+  text-align:center;
+}
+
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -37,19 +71,16 @@ section{padding:40px 8%}
   border-radius:16px;
   padding:20px;
   text-align:center;
-  transition:.3s;
 }
-.card:hover{transform:translateY(-6px)}
-
 .card img{
   width:100%;
   border-radius:12px;
   margin-bottom:12px;
 }
-
 .card h3{color:#facc15}
 .card p{margin:10px 0;color:#cbd5f5}
 
+/* BUTTONS */
 .btn{
   display:block;
   padding:12px;
@@ -80,41 +111,81 @@ footer{
 <body>
 
 <header>
-  <h1>Gold Covering Shop</h1>
-  <p>Order via WhatsApp or Instagram</p>
+  <h1>Manikandan Gold Covering</h1>
+  <p>Select a category to view collections</p>
 </header>
 
-<section>
+<!-- CATEGORY OPTIONS -->
+<div class="categories">
+  <a href="#chains">Chains</a>
+  <a href="#studs">Studs</a>
+  <a href="#rings">Rings</a>
+</div>
+
+<!-- CHAINS -->
+<section id="chains">
+  <h2>Gold Covering Chains</h2>
   <div class="grid">
 
     <div class="card">
-      <img src="chain.jpg" alt="Gold Covering Chain">
-      <h3>Gold Covering Chain</h3>
-      <p>Price: ₹1,200</p>
+      <img src="chain1.jpg" alt="Chain">
+      <h3>Classic Chain</h3>
+      <p>₹1,200</p>
+      <a class="btn whatsapp" onclick="buyWhatsApp('Classic Chain','1200')">Buy on WhatsApp</a>
+      <a class="btn instagram" href="https://www.instagram.com/direct/t/maniacboy.619/" target="_blank">Buy on Instagram</a>
+    </div>
 
-      <a class="btn whatsapp"
-         onclick="buyWhatsApp('Gold Covering Chain','1200')">
-        Buy on WhatsApp
-      </a>
+    <div class="card">
+      <img src="chain2.jpg" alt="Chain">
+      <h3>Premium Chain</h3>
+      <p>₹1,500</p>
+      <a class="btn whatsapp" onclick="buyWhatsApp('Premium Chain','1500')">Buy on WhatsApp</a>
+      <a class="btn instagram" href="https://www.instagram.com/direct/t/maniacboy.619/" target="_blank">Buy on Instagram</a>
+    </div>
 
-      <a class="btn instagram"
-         href="https://www.instagram.com/direct/t/maniacboy.619/"
-         target="_blank">
-        Buy on Instagram
-      </a>
+  </div>
+</section>
+
+<!-- STUDS -->
+<section id="studs">
+  <h2>Gold Covering Studs</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="stud1.jpg" alt="Stud">
+      <h3>Flower Stud</h3>
+      <p>₹700</p>
+      <a class="btn whatsapp" onclick="buyWhatsApp('Flower Stud','700')">Buy on WhatsApp</a>
+      <a class="btn instagram" href="https://www.instagram.com/direct/t/maniacboy.619/" target="_blank">Buy on Instagram</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- RINGS -->
+<section id="rings">
+  <h2>Gold Covering Rings</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="ring1.jpg" alt="Ring">
+      <h3>Designer Ring</h3>
+      <p>₹650</p>
+      <a class="btn whatsapp" onclick="buyWhatsApp('Designer Ring','650')">Buy on WhatsApp</a>
+      <a class="btn instagram" href="https://www.instagram.com/direct/t/maniacboy.619/" target="_blank">Buy on Instagram</a>
     </div>
 
   </div>
 </section>
 
 <footer>
-  📞 WhatsApp Orders | 📸 Instagram DM Orders  
+  📞 Order via WhatsApp | 📸 Order via Instagram  
   <br>© 2025 Manikandan Gold Covering
 </footer>
 
 <script>
 function buyWhatsApp(product, price){
-  const msg = `Hi, I want to buy ${product}. Price: ₹${price}`;
+  const msg = `Hi, I am interested in ${product}. Price: ₹${price}`;
   window.open(
     `https://wa.me/917902873682?text=${encodeURIComponent(msg)}`,
     "_blank"
