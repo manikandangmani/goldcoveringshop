@@ -3,101 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chains |Gold Covering</title>
+<title>Chains | Manikandan Gold Covering</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-
-body{
-  background:#0b1220;
-  color:#f8fafc;
-}
-
-/* NAVBAR */
-nav{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:#020617;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 8%;
-  border-bottom:1px solid rgba(250,204,21,.2);
-}
-nav h1{color:#facc15;font-size:20px}
-nav a{
-  color:#e5e7eb;
-  margin-left:20px;
-  text-decoration:none;
-  font-weight:500;
-}
-nav a:hover{color:#facc15}
-
-/* PAGE TITLE */
-.page-title{
-  text-align:center;
-  padding:35px 20px;
-}
-.page-title h2{
-  color:#facc15;
-  font-size:30px;
-}
-
-/* PRODUCTS */
-section{padding:40px 8%}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:30px;
-}
-
-.card{
-  background:#020617;
-  border-radius:18px;
-  padding:25px;
-  text-align:center;
-  transition:.3s;
-}
-.card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 25px 50px rgba(250,204,21,.15);
-}
-
-.card h3{color:#facc15}
-.card p{margin:10px 0;color:#cbd5f5}
-
-/* BUTTONS */
-.btn{
-  display:block;
-  padding:12px;
-  margin-top:10px;
-  border-radius:30px;
-  font-weight:600;
-  text-decoration:none;
-}
-
-.whatsapp{background:#25D366;color:#020617}
-.instagram{border:2px solid #e1306c;color:#e1306c}
-
-/* FOOTER */
-footer{
-  text-align:center;
-  padding:25px;
-  font-size:14px;
-  color:#94a3b8;
-  border-top:1px solid rgba(255,255,255,.1);
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav>
-  <h1>Gold Covering Shop</h1>
+  <h1>Manikandan Gold</h1>
   <div>
     <a href="index.html">Home</a>
     <a href="chains.html">Chains</a>
@@ -117,15 +32,27 @@ footer{
     <div class="card">
       <h3>Classic Chain</h3>
       <p>₹1,200</p>
-      <a class="btn whatsapp" onclick="buyWhatsApp('Classic Chain','1200')">Buy on WhatsApp</a>
-      <a class="btn instagram" href="https://www.instagram.com/direct/t/maniacboy.619/" target="_blank">Buy on Instagram</a>
+      <a class="btn whatsapp" onclick="buyWhatsApp('Classic Chain','1200')">
+        Buy on WhatsApp
+      </a>
+      <a class="btn instagram"
+         href="https://www.instagram.com/direct/t/maniacboy.619/"
+         target="_blank">
+        Buy on Instagram
+      </a>
     </div>
 
     <div class="card">
       <h3>Premium Chain</h3>
       <p>₹1,500</p>
-      <a class="btn whatsapp" onclick="buyWhatsApp('Premium Chain','1500')">Buy on WhatsApp</a>
-      <a class="btn instagram" href="https://www.instagram.com/direct/t/maniacboy.619/" target="_blank">Buy on Instagram</a>
+      <a class="btn whatsapp" onclick="buyWhatsApp('Premium Chain','1500')">
+        Buy on WhatsApp
+      </a>
+      <a class="btn instagram"
+         href="https://www.instagram.com/direct/t/maniacboy.619/"
+         target="_blank">
+        Buy on Instagram
+      </a>
     </div>
 
   </div>
