@@ -3,23 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Studs |Gold Covering Shop</title>
+<title>Studs | Gold Covering</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <nav>
-  <h1>Gold Covering</h1>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="chains.html">Chains</a>
-    <a href="studs.html">Studs</a>
-    <a href="rings.html">Rings</a>
-    <a href="https://wa.me/917902873682" target="_blank">WhatsApp</a>
-  </div>
+  <h1>J Gold Covering</h1>
+  <div class="nav-links" id="navLinks">
+  <a href="index.html">Home</a>
+  <a href="chains.html">Chains</a>
+  <a href="studs.html">Studs</a>
+  <a href="rings.html">Rings</a>
+</div>
+
+<div class="nav-icons">
+  <a href="https://wa.me/917902873682" target="_blank" class="whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://www.instagram.com/maniacboy.619/" target="_blank" class="insta-icon">
+  <i class="fab fa-instagram"></i>
+</a>
+
+</div>
+
+
+<div class="hamburger" onclick="toggleMenu()">
+  ☰
+</div>
+
 </nav>
 
 <div class="page-title">
@@ -30,28 +47,36 @@
   <div class="grid">
 
     <div class="card">
+      <span class="badge">NEW</span>
+      <img src="images/studs/flower-stud.jpg" alt="Flower Stud">
       <h3>Flower Stud</h3>
       <p>₹700</p>
-      <a class="btn whatsapp" onclick="buyWhatsApp('Flower Stud','700')">
-        Buy on WhatsApp
+      <a class="btn whatsapp-btn"
+         href="https://wa.me/917902873682?text=Flower Stud ₹700"
+         target="_blank">
+         Buy on WhatsApp
       </a>
       <a class="btn instagram"
          href="https://www.instagram.com/direct/t/maniacboy.619/"
          target="_blank">
-        Buy on Instagram
+         Buy on Instagram
       </a>
     </div>
 
     <div class="card">
+      <span class="badge">BEST SELLER</span>
+      <img src="images/studs/stone-stud.jpg" alt="Stone Stud">
       <h3>Stone Stud</h3>
       <p>₹850</p>
-      <a class="btn whatsapp" onclick="buyWhatsApp('Stone Stud','850')">
-        Buy on WhatsApp
+      <a class="btn whatsapp-btn"
+         href="https://wa.me/917902873682?text=Stone Stud ₹850"
+         target="_blank">
+         Buy on WhatsApp
       </a>
       <a class="btn instagram"
          href="https://www.instagram.com/direct/t/maniacboy.619/"
          target="_blank">
-        Buy on Instagram
+         Buy on Instagram
       </a>
     </div>
 
@@ -59,18 +84,14 @@
 </section>
 
 <footer>
-  © 2025 Manikandan Gold Covering · Premium Jewellery
+  © 2025 J Gold Covering
 </footer>
-
 <script>
-function buyWhatsApp(product, price){
-  const msg = `Hi, I want to buy ${product}. Price: ₹${price}`;
-  window.open(
-    `https://wa.me/917902873682?text=${encodeURIComponent(msg)}`,
-    "_blank"
-  );
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("show");
 }
 </script>
+
 
 </body>
 </html>
