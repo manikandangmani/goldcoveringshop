@@ -1,57 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
+<title>J Gold Covering Shop</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gold Covering Shop</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <nav>
-  <h1>Gold Covering</h1>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="chains.html">Chains</a>
-    <a href="studs.html">Studs</a>
-    <a href="rings.html">Rings</a>
-    <a href="https://wa.me/917902873682" target="_blank">WhatsApp</a>
-  </div>
-</nav>
-
-<div class="hero">
-  <h2>Premium Gold Covering Jewellery</h2>
-  <p>Explore our exclusive collections</p>
+  <h1>J Gold Covering</h1>
+  <div class="nav-links" id="navLinks">
+  <a href="index.html">Home</a>
+  <a href="chains.html">Chains</a>
+  <a href="studs.html">Studs</a>
+  <a href="rings.html">Rings</a>
 </div>
 
+<div class="nav-icons">
+  <a href="https://wa.me/917902873682" target="_blank" class="whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://www.instagram.com/maniacboy.619/" target="_blank" class="insta-icon">
+  <i class="fab fa-instagram"></i>
+</a>
+
+</div>
+
+
+<div class="hamburger" onclick="toggleMenu()">
+  ☰
+</div>
+
+
+</nav>
+
+<header>
+  <h1>J Gold Covering Shop</h1>
+  <p>Premium Gold Covering Jewellery Collections</p>
+</header>
+
 <section class="categories">
-
   <div class="cat-card">
-    <h3>Chains</h3>
-    <p>Elegant gold covering chains</p>
-    <a href="chains.html">View Collection</a>
+    <h2>Chains</h2>
+    <p>Stylish gold covering chains</p>
+    <a href="chains.html">View Chains</a>
   </div>
 
   <div class="cat-card">
-    <h3>Studs</h3>
-    <p>Daily & party wear studs</p>
-    <a href="studs.html">View Collection</a>
+    <h2>Studs</h2>
+    <p>Elegant studs for all occasions</p>
+    <a href="studs.html">View Studs</a>
   </div>
 
   <div class="cat-card">
-    <h3>Rings</h3>
+    <h2>Rings</h2>
     <p>Designer gold covering rings</p>
-    <a href="rings.html">View Collection</a>
+    <a href="rings.html">View Rings</a>
   </div>
-
 </section>
 
-<footer>
-  © 2025 Manikandan Gold Covering · Premium Jewellery
-</footer>
+<footer>© 2025 J Gold Covering</footer>
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
+
 
 </body>
 </html>
